@@ -1,9 +1,9 @@
 module CarrierWave
   module DataMapper
     module Property
-      class Uploader < ::DataMapper::Property::String
+      class Uploader < ::DataMapper::Property::Text
 
-        length 255
+        lazy false
 
         def custom?
           true
